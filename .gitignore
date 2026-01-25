@@ -1,0 +1,5 @@
+bazel-bin
+bazel-TestBatSystem
+bazel-my_raylinv
+bazel-out
+bazel-testlogs
