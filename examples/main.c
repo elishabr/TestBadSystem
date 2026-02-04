@@ -157,7 +157,6 @@ void main_my_poissinv(void)
   /* Call the entry-point 'my_poissinv'. */
   emxInitArray_real_T(&T_s_k, 2);
   my_poissinv(&Uniform_Mat, 2.0, T_s_k);
-  emxDestroyArray_real_T(&Uniform_Mat);
   emxDestroyArray_real_T(T_s_k);
 }
 

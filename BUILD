@@ -2,6 +2,10 @@ cc_library(
     name = "testbat",
     srcs = glob(["lib/*.c"]),
     hdrs = glob(["lib/*.h"]),
+    linkopts = [
+        "-fopenmp",
+        "-lm",
+    ],
 )
 
 cc_binary(
@@ -10,9 +14,5 @@ cc_binary(
         "examples/main.c",
     ],
     deps = [":testbat"],
-    linkopts = [
-        "-fopenmp",
-        "-lm",
-    ],
     linkstatic=False,
 )
